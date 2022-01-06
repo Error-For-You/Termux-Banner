@@ -1,8 +1,6 @@
 clear
 pkg install fish pv mpv figlet -y; pip2 install lolcat
 rm -rf /data/data/com.termux/files/usr/etc/motd
-mkdir /data/data/com.termux/files/usr/etc/img
-cp error.gif /data/data/com.termux/files/usr/etc/img
 cp -r thunter /data/data/com.termux/files/usr/etc
 mkdir /data/data/com.termux/files/home/.config/fish/functions
 touch /data/data/com.termux/files/home/.config/fish/functions/fish_prompt.fish
@@ -22,7 +20,7 @@ printf "_________________________
 | Github: github.com/Error-For-You  |
 |______________________________|
 
-"|pv -qL 15
+"|lolcat pv -qL 15
 printf ''
 read -p 'Your name~~> ' uname
 read -p 'Command bar name~~> ' cnm
